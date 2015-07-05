@@ -42,18 +42,18 @@
 		D5BA7C581B462F2A005BF850 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = D5BA7C451B462F2A005BF850 /* UIProgressView+AFNetworking.m */; };
 		D5BA7C591B462F2A005BF850 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = D5BA7C471B462F2A005BF850 /* UIRefreshControl+AFNetworking.m */; };
 		D5BA7C5A1B462F2A005BF850 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = D5BA7C491B462F2A005BF850 /* UIWebView+AFNetworking.m */; };
-		D5BA7C6E1B4632D3005BF850 /* HHUserHeadCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D5BA7C6D1B4632D3005BF850 /* HHUserHeadCell.m */; };
-		D5BA7C721B4635ED005BF850 /* HHBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D5BA7C711B4635ED005BF850 /* HHBaseCell.m */; };
-		D5BA7C751B465B19005BF850 /* HHCellCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = D5BA7C741B465B19005BF850 /* HHCellCollection.m */; };
-		D5BA7C781B4665CC005BF850 /* HHLabelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D5BA7C771B4665CC005BF850 /* HHLabelCell.m */; };
-		D5BA7C7C1B469EC2005BF850 /* EScrollerView.m in Sources */ = {isa = PBXBuildFile; fileRef = D5BA7C7B1B469EC2005BF850 /* EScrollerView.m */; };
-		D5BA7C7F1B469F3D005BF850 /* HHBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = D5BA7C7E1B469F3D005BF850 /* HHBaseView.m */; };
+		D5D95F711B46CB8400C8D8FD /* HHBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D95F641B46CB8400C8D8FD /* HHBaseCell.m */; };
+		D5D95F721B46CB8400C8D8FD /* HHBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D95F661B46CB8400C8D8FD /* HHBaseView.m */; };
+		D5D95F731B46CB8400C8D8FD /* HHCellCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D95F681B46CB8400C8D8FD /* HHCellCollection.m */; };
+		D5D95F741B46CB8400C8D8FD /* HHLabelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D95F6A1B46CB8400C8D8FD /* HHLabelCell.m */; };
+		D5D95F751B46CB8400C8D8FD /* HHUserHeadCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D95F6C1B46CB8400C8D8FD /* HHUserHeadCell.m */; };
+		D5D95F761B46CB8400C8D8FD /* ICSDropShadowView.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D95F6F1B46CB8400C8D8FD /* ICSDropShadowView.m */; };
+		D5D95F7B1B46CCFC00C8D8FD /* HHADScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D95F7A1B46CCFC00C8D8FD /* HHADScrollView.m */; };
 		D5E2B80A1B44DB14003ACBD6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E2B8091B44DB14003ACBD6 /* main.m */; };
 		D5E2B80D1B44DB14003ACBD6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E2B80C1B44DB14003ACBD6 /* AppDelegate.m */; };
 		D5E2B8151B44DB14003ACBD6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5E2B8141B44DB14003ACBD6 /* Images.xcassets */; };
 		D5E2B8241B44DB15003ACBD6 /* HeartHealthTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E2B8231B44DB15003ACBD6 /* HeartHealthTests.m */; };
 		D5E2B8911B44FE01003ACBD6 /* ICSDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E2B88E1B44FE01003ACBD6 /* ICSDrawerController.m */; };
-		D5E2B8961B44FEAD003ACBD6 /* ICSDropShadowView.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E2B8951B44FEAD003ACBD6 /* ICSDropShadowView.m */; };
 		D5E2B89E1B450104003ACBD6 /* HHLeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E2B89D1B450104003ACBD6 /* HHLeftViewController.m */; };
 		D5E2B8A11B450499003ACBD6 /* HHRightBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E2B8A01B450499003ACBD6 /* HHRightBaseViewController.m */; };
 		D5E2B8A41B450D07003ACBD6 /* HHBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E2B8A31B450D07003ACBD6 /* HHBaseNavigationController.m */; };
@@ -150,18 +150,20 @@
 		D5BA7C471B462F2A005BF850 /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
 		D5BA7C481B462F2A005BF850 /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
 		D5BA7C491B462F2A005BF850 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
-		D5BA7C6C1B4632D3005BF850 /* HHUserHeadCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHUserHeadCell.h; sourceTree = "<group>"; };
-		D5BA7C6D1B4632D3005BF850 /* HHUserHeadCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHUserHeadCell.m; sourceTree = "<group>"; };
-		D5BA7C701B4635ED005BF850 /* HHBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHBaseCell.h; sourceTree = "<group>"; };
-		D5BA7C711B4635ED005BF850 /* HHBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHBaseCell.m; sourceTree = "<group>"; };
-		D5BA7C731B465B19005BF850 /* HHCellCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHCellCollection.h; sourceTree = "<group>"; };
-		D5BA7C741B465B19005BF850 /* HHCellCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHCellCollection.m; sourceTree = "<group>"; };
-		D5BA7C761B4665CC005BF850 /* HHLabelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHLabelCell.h; sourceTree = "<group>"; };
-		D5BA7C771B4665CC005BF850 /* HHLabelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHLabelCell.m; sourceTree = "<group>"; };
-		D5BA7C7A1B469EC2005BF850 /* EScrollerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EScrollerView.h; sourceTree = "<group>"; };
-		D5BA7C7B1B469EC2005BF850 /* EScrollerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EScrollerView.m; sourceTree = "<group>"; };
-		D5BA7C7D1B469F3D005BF850 /* HHBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHBaseView.h; sourceTree = "<group>"; };
-		D5BA7C7E1B469F3D005BF850 /* HHBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHBaseView.m; sourceTree = "<group>"; };
+		D5D95F631B46CB8400C8D8FD /* HHBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHBaseCell.h; sourceTree = "<group>"; };
+		D5D95F641B46CB8400C8D8FD /* HHBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHBaseCell.m; sourceTree = "<group>"; };
+		D5D95F651B46CB8400C8D8FD /* HHBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHBaseView.h; sourceTree = "<group>"; };
+		D5D95F661B46CB8400C8D8FD /* HHBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHBaseView.m; sourceTree = "<group>"; };
+		D5D95F671B46CB8400C8D8FD /* HHCellCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHCellCollection.h; sourceTree = "<group>"; };
+		D5D95F681B46CB8400C8D8FD /* HHCellCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHCellCollection.m; sourceTree = "<group>"; };
+		D5D95F691B46CB8400C8D8FD /* HHLabelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHLabelCell.h; sourceTree = "<group>"; };
+		D5D95F6A1B46CB8400C8D8FD /* HHLabelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHLabelCell.m; sourceTree = "<group>"; };
+		D5D95F6B1B46CB8400C8D8FD /* HHUserHeadCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHUserHeadCell.h; sourceTree = "<group>"; };
+		D5D95F6C1B46CB8400C8D8FD /* HHUserHeadCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHUserHeadCell.m; sourceTree = "<group>"; };
+		D5D95F6E1B46CB8400C8D8FD /* ICSDropShadowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICSDropShadowView.h; sourceTree = "<group>"; };
+		D5D95F6F1B46CB8400C8D8FD /* ICSDropShadowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICSDropShadowView.m; sourceTree = "<group>"; };
+		D5D95F791B46CCFC00C8D8FD /* HHADScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHADScrollView.h; sourceTree = "<group>"; };
+		D5D95F7A1B46CCFC00C8D8FD /* HHADScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHADScrollView.m; sourceTree = "<group>"; };
 		D5E2B8041B44DB14003ACBD6 /* HeartHealth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeartHealth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5E2B8081B44DB14003ACBD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5E2B8091B44DB14003ACBD6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -173,8 +175,6 @@
 		D5E2B8231B44DB15003ACBD6 /* HeartHealthTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeartHealthTests.m; sourceTree = "<group>"; };
 		D5E2B88D1B44FE01003ACBD6 /* ICSDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICSDrawerController.h; sourceTree = "<group>"; };
 		D5E2B88E1B44FE01003ACBD6 /* ICSDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICSDrawerController.m; sourceTree = "<group>"; };
-		D5E2B8941B44FEAD003ACBD6 /* ICSDropShadowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICSDropShadowView.h; sourceTree = "<group>"; };
-		D5E2B8951B44FEAD003ACBD6 /* ICSDropShadowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICSDropShadowView.m; sourceTree = "<group>"; };
 		D5E2B89C1B450104003ACBD6 /* HHLeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHLeftViewController.h; sourceTree = "<group>"; };
 		D5E2B89D1B450104003ACBD6 /* HHLeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHLeftViewController.m; sourceTree = "<group>"; };
 		D5E2B89F1B450499003ACBD6 /* HHRightBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HHRightBaseViewController.h; path = ../HHRightBaseViewController.h; sourceTree = "<group>"; };
@@ -301,24 +301,65 @@
 			path = "UIKit+AFNetworking";
 			sourceTree = "<group>";
 		};
-		D5BA7C6F1B4635D9005BF850 /* HHBaseViews */ = {
+		D5D95F5D1B46CB8400C8D8FD /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				D5BA7C701B4635ED005BF850 /* HHBaseCell.h */,
-				D5BA7C711B4635ED005BF850 /* HHBaseCell.m */,
-				D5BA7C7D1B469F3D005BF850 /* HHBaseView.h */,
-				D5BA7C7E1B469F3D005BF850 /* HHBaseView.m */,
+				D5D95F611B46CB8400C8D8FD /* HHViews */,
+				D5D95F6D1B46CB8400C8D8FD /* ICSDropShadowView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D5D95F611B46CB8400C8D8FD /* HHViews */ = {
+			isa = PBXGroup;
+			children = (
+				D5D95F781B46CC6F00C8D8FD /* HHADViews(新闻条) */,
+				D5D95F771B46CBD300C8D8FD /* HHCells */,
+				D5D95F621B46CB8400C8D8FD /* HHBaseViews */,
+				D5D95F671B46CB8400C8D8FD /* HHCellCollection.h */,
+				D5D95F681B46CB8400C8D8FD /* HHCellCollection.m */,
+			);
+			path = HHViews;
+			sourceTree = "<group>";
+		};
+		D5D95F621B46CB8400C8D8FD /* HHBaseViews */ = {
+			isa = PBXGroup;
+			children = (
+				D5D95F631B46CB8400C8D8FD /* HHBaseCell.h */,
+				D5D95F641B46CB8400C8D8FD /* HHBaseCell.m */,
+				D5D95F651B46CB8400C8D8FD /* HHBaseView.h */,
+				D5D95F661B46CB8400C8D8FD /* HHBaseView.m */,
 			);
 			path = HHBaseViews;
 			sourceTree = "<group>";
 		};
-		D5BA7C791B469EC2005BF850 /* EScrollerView */ = {
+		D5D95F6D1B46CB8400C8D8FD /* ICSDropShadowView */ = {
 			isa = PBXGroup;
 			children = (
-				D5BA7C7A1B469EC2005BF850 /* EScrollerView.h */,
-				D5BA7C7B1B469EC2005BF850 /* EScrollerView.m */,
+				D5D95F6E1B46CB8400C8D8FD /* ICSDropShadowView.h */,
+				D5D95F6F1B46CB8400C8D8FD /* ICSDropShadowView.m */,
 			);
-			path = EScrollerView;
+			path = ICSDropShadowView;
+			sourceTree = "<group>";
+		};
+		D5D95F771B46CBD300C8D8FD /* HHCells */ = {
+			isa = PBXGroup;
+			children = (
+				D5D95F691B46CB8400C8D8FD /* HHLabelCell.h */,
+				D5D95F6A1B46CB8400C8D8FD /* HHLabelCell.m */,
+				D5D95F6B1B46CB8400C8D8FD /* HHUserHeadCell.h */,
+				D5D95F6C1B46CB8400C8D8FD /* HHUserHeadCell.m */,
+			);
+			name = HHCells;
+			sourceTree = "<group>";
+		};
+		D5D95F781B46CC6F00C8D8FD /* HHADViews(新闻条) */ = {
+			isa = PBXGroup;
+			children = (
+				D5D95F791B46CCFC00C8D8FD /* HHADScrollView.h */,
+				D5D95F7A1B46CCFC00C8D8FD /* HHADScrollView.m */,
+			);
+			name = "HHADViews(新闻条)";
 			sourceTree = "<group>";
 		};
 		D5E2B7FB1B44DB14003ACBD6 = {
@@ -342,9 +383,9 @@
 		D5E2B8061B44DB14003ACBD6 /* HeartHealth */ = {
 			isa = PBXGroup;
 			children = (
+				D5D95F5D1B46CB8400C8D8FD /* Views */,
 				D5E2B8AA1B451721003ACBD6 /* MyTools */,
 				D5E2B8321B44DD3F003ACBD6 /* ViewControllers */,
-				D5E2B8331B44DD3F003ACBD6 /* Views */,
 				D5E2B82D1B44DD09003ACBD6 /* BaseViewController(基础继承) */,
 				D5E2B82E1B44DD09003ACBD6 /* Images */,
 				D5E2B82F1B44DD09003ACBD6 /* Model(数据模型) */,
@@ -432,16 +473,6 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
-		D5E2B8331B44DD3F003ACBD6 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				D5BA7C791B469EC2005BF850 /* EScrollerView */,
-				D5E2B8981B44FF61003ACBD6 /* HHViews */,
-				D5E2B8931B44FEAD003ACBD6 /* ICSDropShadowView */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
 		D5E2B88C1B44FE01003ACBD6 /* ICSDrawerController */ = {
 			isa = PBXGroup;
 			children = (
@@ -449,15 +480,6 @@
 				D5E2B88E1B44FE01003ACBD6 /* ICSDrawerController.m */,
 			);
 			path = ICSDrawerController;
-			sourceTree = "<group>";
-		};
-		D5E2B8931B44FEAD003ACBD6 /* ICSDropShadowView */ = {
-			isa = PBXGroup;
-			children = (
-				D5E2B8941B44FEAD003ACBD6 /* ICSDropShadowView.h */,
-				D5E2B8951B44FEAD003ACBD6 /* ICSDropShadowView.m */,
-			);
-			path = ICSDropShadowView;
 			sourceTree = "<group>";
 		};
 		D5E2B8971B44FF59003ACBD6 /* HHViewControllers */ = {
@@ -482,20 +504,6 @@
 				D50243C61B45538A00C26AE8 /* HHDetailWebView.m */,
 			);
 			path = HHViewControllers;
-			sourceTree = "<group>";
-		};
-		D5E2B8981B44FF61003ACBD6 /* HHViews */ = {
-			isa = PBXGroup;
-			children = (
-				D5BA7C6F1B4635D9005BF850 /* HHBaseViews */,
-				D5BA7C6C1B4632D3005BF850 /* HHUserHeadCell.h */,
-				D5BA7C6D1B4632D3005BF850 /* HHUserHeadCell.m */,
-				D5BA7C761B4665CC005BF850 /* HHLabelCell.h */,
-				D5BA7C771B4665CC005BF850 /* HHLabelCell.m */,
-				D5BA7C731B465B19005BF850 /* HHCellCollection.h */,
-				D5BA7C741B465B19005BF850 /* HHCellCollection.m */,
-			);
-			path = HHViews;
 			sourceTree = "<group>";
 		};
 		D5E2B8AA1B451721003ACBD6 /* MyTools */ = {
@@ -623,6 +631,7 @@
 				D5BA7C521B462F2A005BF850 /* AFURLSessionManager.m in Sources */,
 				D5BA7C221B462E97005BF850 /* View+MASAdditions.m in Sources */,
 				D5BA7C1A1B462E97005BF850 /* MASCompositeConstraint.m in Sources */,
+				D5D95F721B46CB8400C8D8FD /* HHBaseView.m in Sources */,
 				D5E2B8A71B451013003ACBD6 /* HHBaseViewController.m in Sources */,
 				D50243BB1B45352200C26AE8 /* HHSmallGroup.m in Sources */,
 				D5BA7C5A1B462F2A005BF850 /* UIWebView+AFNetworking.m in Sources */,
@@ -630,35 +639,34 @@
 				D50243C41B453D2300C26AE8 /* HHUserAccount.m in Sources */,
 				D5BA7C1D1B462E97005BF850 /* MASLayoutConstraint.m in Sources */,
 				D50243BE1B4535D900C26AE8 /* HHNearbyHospital.m in Sources */,
+				D5D95F731B46CB8400C8D8FD /* HHCellCollection.m in Sources */,
 				D5E2B8911B44FE01003ACBD6 /* ICSDrawerController.m in Sources */,
 				D50243B11B452F1800C26AE8 /* Okeys.m in Sources */,
-				D5BA7C751B465B19005BF850 /* HHCellCollection.m in Sources */,
 				D5E2B8AE1B4517E6003ACBD6 /* OLog.m in Sources */,
-				D5BA7C721B4635ED005BF850 /* HHBaseCell.m in Sources */,
-				D5BA7C6E1B4632D3005BF850 /* HHUserHeadCell.m in Sources */,
 				D5BA7C511B462F2A005BF850 /* AFURLResponseSerialization.m in Sources */,
 				D50243C11B45364B00C26AE8 /* HHSmartHospital.m in Sources */,
+				D5D95F761B46CB8400C8D8FD /* ICSDropShadowView.m in Sources */,
 				D5BA7C211B462E97005BF850 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				D5D95F7B1B46CCFC00C8D8FD /* HHADScrollView.m in Sources */,
 				D5BA7C571B462F2A005BF850 /* UIImageView+AFNetworking.m in Sources */,
 				D5BA7C4A1B462F2A005BF850 /* AFHTTPRequestOperation.m in Sources */,
-				D5BA7C7C1B469EC2005BF850 /* EScrollerView.m in Sources */,
 				D5BA7C581B462F2A005BF850 /* UIProgressView+AFNetworking.m in Sources */,
 				D5BA7C4F1B462F2A005BF850 /* AFURLConnectionOperation.m in Sources */,
 				D5BA7C4B1B462F2A005BF850 /* AFHTTPRequestOperationManager.m in Sources */,
+				D5D95F711B46CB8400C8D8FD /* HHBaseCell.m in Sources */,
 				D5BA7C591B462F2A005BF850 /* UIRefreshControl+AFNetworking.m in Sources */,
+				D5D95F751B46CB8400C8D8FD /* HHUserHeadCell.m in Sources */,
 				D50243C71B45538A00C26AE8 /* HHDetailWebView.m in Sources */,
 				D5E2B80A1B44DB14003ACBD6 /* main.m in Sources */,
 				D5BA7C201B462E97005BF850 /* NSArray+MASAdditions.m in Sources */,
+				D5D95F741B46CB8400C8D8FD /* HHLabelCell.m in Sources */,
 				D5BA7C231B462E97005BF850 /* ViewController+MASAdditions.m in Sources */,
-				D5BA7C781B4665CC005BF850 /* HHLabelCell.m in Sources */,
-				D5E2B8961B44FEAD003ACBD6 /* ICSDropShadowView.m in Sources */,
 				D5BA7C501B462F2A005BF850 /* AFURLRequestSerialization.m in Sources */,
 				D5BA7C4E1B462F2A005BF850 /* AFSecurityPolicy.m in Sources */,
 				D5BA7C531B462F2A005BF850 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				D5BA7C4C1B462F2A005BF850 /* AFHTTPSessionManager.m in Sources */,
 				D50243B81B4534BB00C26AE8 /* HHNearbyPharmacy.m in Sources */,
 				D5E2B89E1B450104003ACBD6 /* HHLeftViewController.m in Sources */,
-				D5BA7C7F1B469F3D005BF850 /* HHBaseView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,7 +13,7 @@
 @property(nonatomic, strong)UIImage * normalLabelImage;
 @property(nonatomic, strong)UIImage * selectLabelImage;
 @property(nonatomic, copy) NSString *labelInfo;
-@property(nonatomic, assign) NSInteger tag;
+@property(nonatomic, assign) NSInteger indexTag;
 
 
 @end

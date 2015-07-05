@@ -34,7 +34,7 @@
                        labelInfo:(NSString *)labelInfo
 {
     HHLabelCell *cell = [tableView dequeueReusableCellWithIdentifier:LabelCell forIndexPath:indexPath];
-    cell.tag=indexPath.row;
+    cell.indexTag=indexPath.row;
     cell.normalLabelImage=normalImage;
     cell.selectLabelImage=selectImage;
     cell.labelInfo=labelInfo;

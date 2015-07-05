@@ -121,7 +121,7 @@
     
     NSNumber *i=noti.object;
     
-    if ([i integerValue]!=self.tag) {
+    if ([i integerValue]!=self.indexTag) {
         
         //普通状态
         self.labelImageView.image=self.selectLabelImage;
