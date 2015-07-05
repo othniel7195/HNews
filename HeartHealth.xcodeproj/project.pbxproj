@@ -15,6 +15,15 @@
 		D50243C11B45364B00C26AE8 /* HHSmartHospital.m in Sources */ = {isa = PBXBuildFile; fileRef = D50243C01B45364B00C26AE8 /* HHSmartHospital.m */; };
 		D50243C41B453D2300C26AE8 /* HHUserAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = D50243C31B453D2300C26AE8 /* HHUserAccount.m */; };
 		D50243C71B45538A00C26AE8 /* HHDetailWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = D50243C61B45538A00C26AE8 /* HHDetailWebView.m */; };
+		D55834B61B4984320080513C /* HHRightBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D55834B51B4984320080513C /* HHRightBaseViewController.m */; };
+		D55834C91B4984560080513C /* NSData+SDDataCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D55834B91B4984560080513C /* NSData+SDDataCache.m */; };
+		D55834CA1B4984560080513C /* TAAbstractDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = D55834BC1B4984560080513C /* TAAbstractDotView.m */; };
+		D55834CB1B4984560080513C /* TAAnimatedDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = D55834BE1B4984560080513C /* TAAnimatedDotView.m */; };
+		D55834CC1B4984560080513C /* TADotView.m in Sources */ = {isa = PBXBuildFile; fileRef = D55834C01B4984560080513C /* TADotView.m */; };
+		D55834CD1B4984560080513C /* TAPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = D55834C21B4984560080513C /* TAPageControl.m */; };
+		D55834CE1B4984560080513C /* SDCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D55834C41B4984560080513C /* SDCollectionViewCell.m */; };
+		D55834CF1B4984560080513C /* SDCycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = D55834C61B4984560080513C /* SDCycleScrollView.m */; };
+		D55834D01B4984560080513C /* UIView+SDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = D55834C81B4984560080513C /* UIView+SDExtension.m */; };
 		D5BA7C1A1B462E97005BF850 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = D5BA7C021B462E97005BF850 /* MASCompositeConstraint.m */; };
 		D5BA7C1B1B462E97005BF850 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = D5BA7C051B462E97005BF850 /* MASConstraint.m */; };
 		D5BA7C1C1B462E97005BF850 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = D5BA7C071B462E97005BF850 /* MASConstraintMaker.m */; };
@@ -48,14 +57,12 @@
 		D5D95F741B46CB8400C8D8FD /* HHLabelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D95F6A1B46CB8400C8D8FD /* HHLabelCell.m */; };
 		D5D95F751B46CB8400C8D8FD /* HHUserHeadCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D95F6C1B46CB8400C8D8FD /* HHUserHeadCell.m */; };
 		D5D95F761B46CB8400C8D8FD /* ICSDropShadowView.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D95F6F1B46CB8400C8D8FD /* ICSDropShadowView.m */; };
-		D5D95F7B1B46CCFC00C8D8FD /* HHADScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D95F7A1B46CCFC00C8D8FD /* HHADScrollView.m */; };
 		D5E2B80A1B44DB14003ACBD6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E2B8091B44DB14003ACBD6 /* main.m */; };
 		D5E2B80D1B44DB14003ACBD6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E2B80C1B44DB14003ACBD6 /* AppDelegate.m */; };
 		D5E2B8151B44DB14003ACBD6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5E2B8141B44DB14003ACBD6 /* Images.xcassets */; };
 		D5E2B8241B44DB15003ACBD6 /* HeartHealthTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E2B8231B44DB15003ACBD6 /* HeartHealthTests.m */; };
 		D5E2B8911B44FE01003ACBD6 /* ICSDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E2B88E1B44FE01003ACBD6 /* ICSDrawerController.m */; };
 		D5E2B89E1B450104003ACBD6 /* HHLeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E2B89D1B450104003ACBD6 /* HHLeftViewController.m */; };
-		D5E2B8A11B450499003ACBD6 /* HHRightBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E2B8A01B450499003ACBD6 /* HHRightBaseViewController.m */; };
 		D5E2B8A41B450D07003ACBD6 /* HHBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E2B8A31B450D07003ACBD6 /* HHBaseNavigationController.m */; };
 		D5E2B8A71B451013003ACBD6 /* HHBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E2B8A61B451013003ACBD6 /* HHBaseViewController.m */; };
 		D5E2B8A91B451433003ACBD6 /* hamburger@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D5E2B8A81B451433003ACBD6 /* hamburger@2x.png */; };
@@ -89,6 +96,24 @@
 		D50243C31B453D2300C26AE8 /* HHUserAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHUserAccount.m; sourceTree = "<group>"; };
 		D50243C51B45538A00C26AE8 /* HHDetailWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHDetailWebView.h; sourceTree = "<group>"; };
 		D50243C61B45538A00C26AE8 /* HHDetailWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHDetailWebView.m; sourceTree = "<group>"; };
+		D55834B41B4984320080513C /* HHRightBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HHRightBaseViewController.h; path = HeartHealth/ViewControllers/HHViewControllers/HHRightBaseViewController.h; sourceTree = SOURCE_ROOT; };
+		D55834B51B4984320080513C /* HHRightBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HHRightBaseViewController.m; path = HeartHealth/ViewControllers/HHViewControllers/HHRightBaseViewController.m; sourceTree = SOURCE_ROOT; };
+		D55834B81B4984560080513C /* NSData+SDDataCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+SDDataCache.h"; sourceTree = "<group>"; };
+		D55834B91B4984560080513C /* NSData+SDDataCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+SDDataCache.m"; sourceTree = "<group>"; };
+		D55834BB1B4984560080513C /* TAAbstractDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAbstractDotView.h; sourceTree = "<group>"; };
+		D55834BC1B4984560080513C /* TAAbstractDotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAAbstractDotView.m; sourceTree = "<group>"; };
+		D55834BD1B4984560080513C /* TAAnimatedDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAnimatedDotView.h; sourceTree = "<group>"; };
+		D55834BE1B4984560080513C /* TAAnimatedDotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAAnimatedDotView.m; sourceTree = "<group>"; };
+		D55834BF1B4984560080513C /* TADotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TADotView.h; sourceTree = "<group>"; };
+		D55834C01B4984560080513C /* TADotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TADotView.m; sourceTree = "<group>"; };
+		D55834C11B4984560080513C /* TAPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAPageControl.h; sourceTree = "<group>"; };
+		D55834C21B4984560080513C /* TAPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAPageControl.m; sourceTree = "<group>"; };
+		D55834C31B4984560080513C /* SDCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCollectionViewCell.h; sourceTree = "<group>"; };
+		D55834C41B4984560080513C /* SDCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCollectionViewCell.m; sourceTree = "<group>"; };
+		D55834C51B4984560080513C /* SDCycleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCycleScrollView.h; sourceTree = "<group>"; };
+		D55834C61B4984560080513C /* SDCycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCycleScrollView.m; sourceTree = "<group>"; };
+		D55834C71B4984560080513C /* UIView+SDExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SDExtension.h"; sourceTree = "<group>"; };
+		D55834C81B4984560080513C /* UIView+SDExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SDExtension.m"; sourceTree = "<group>"; };
 		D5BA7C011B462E97005BF850 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
 		D5BA7C021B462E97005BF850 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
 		D5BA7C031B462E97005BF850 /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
@@ -162,8 +187,6 @@
 		D5D95F6C1B46CB8400C8D8FD /* HHUserHeadCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHUserHeadCell.m; sourceTree = "<group>"; };
 		D5D95F6E1B46CB8400C8D8FD /* ICSDropShadowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICSDropShadowView.h; sourceTree = "<group>"; };
 		D5D95F6F1B46CB8400C8D8FD /* ICSDropShadowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICSDropShadowView.m; sourceTree = "<group>"; };
-		D5D95F791B46CCFC00C8D8FD /* HHADScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHADScrollView.h; sourceTree = "<group>"; };
-		D5D95F7A1B46CCFC00C8D8FD /* HHADScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHADScrollView.m; sourceTree = "<group>"; };
 		D5E2B8041B44DB14003ACBD6 /* HeartHealth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeartHealth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5E2B8081B44DB14003ACBD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5E2B8091B44DB14003ACBD6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -177,8 +200,6 @@
 		D5E2B88E1B44FE01003ACBD6 /* ICSDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICSDrawerController.m; sourceTree = "<group>"; };
 		D5E2B89C1B450104003ACBD6 /* HHLeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHLeftViewController.h; sourceTree = "<group>"; };
 		D5E2B89D1B450104003ACBD6 /* HHLeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHLeftViewController.m; sourceTree = "<group>"; };
-		D5E2B89F1B450499003ACBD6 /* HHRightBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HHRightBaseViewController.h; path = ../HHRightBaseViewController.h; sourceTree = "<group>"; };
-		D5E2B8A01B450499003ACBD6 /* HHRightBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HHRightBaseViewController.m; path = ../HHRightBaseViewController.m; sourceTree = "<group>"; };
 		D5E2B8A21B450D07003ACBD6 /* HHBaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HHBaseNavigationController.h; path = HeartHealth/ViewControllers/HHViewControllers/HHBaseNavigationController.h; sourceTree = SOURCE_ROOT; };
 		D5E2B8A31B450D07003ACBD6 /* HHBaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HHBaseNavigationController.m; path = HeartHealth/ViewControllers/HHViewControllers/HHBaseNavigationController.m; sourceTree = SOURCE_ROOT; };
 		D5E2B8A51B451013003ACBD6 /* HHBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HHBaseViewController.h; path = HeartHealth/ViewControllers/HHViewControllers/HHBaseViewController.h; sourceTree = SOURCE_ROOT; };
@@ -209,14 +230,45 @@
 		D50243B21B45322C00C26AE8 /* HHBase */ = {
 			isa = PBXGroup;
 			children = (
-				D5E2B89F1B450499003ACBD6 /* HHRightBaseViewController.h */,
-				D5E2B8A01B450499003ACBD6 /* HHRightBaseViewController.m */,
+				D55834B41B4984320080513C /* HHRightBaseViewController.h */,
+				D55834B51B4984320080513C /* HHRightBaseViewController.m */,
 				D5E2B8A21B450D07003ACBD6 /* HHBaseNavigationController.h */,
 				D5E2B8A31B450D07003ACBD6 /* HHBaseNavigationController.m */,
 				D5E2B8A51B451013003ACBD6 /* HHBaseViewController.h */,
 				D5E2B8A61B451013003ACBD6 /* HHBaseViewController.m */,
 			);
 			path = HHBase;
+			sourceTree = "<group>";
+		};
+		D55834B71B4984560080513C /* SDCycleScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				D55834B81B4984560080513C /* NSData+SDDataCache.h */,
+				D55834B91B4984560080513C /* NSData+SDDataCache.m */,
+				D55834BA1B4984560080513C /* PageControl */,
+				D55834C31B4984560080513C /* SDCollectionViewCell.h */,
+				D55834C41B4984560080513C /* SDCollectionViewCell.m */,
+				D55834C51B4984560080513C /* SDCycleScrollView.h */,
+				D55834C61B4984560080513C /* SDCycleScrollView.m */,
+				D55834C71B4984560080513C /* UIView+SDExtension.h */,
+				D55834C81B4984560080513C /* UIView+SDExtension.m */,
+			);
+			path = SDCycleScrollView;
+			sourceTree = "<group>";
+		};
+		D55834BA1B4984560080513C /* PageControl */ = {
+			isa = PBXGroup;
+			children = (
+				D55834BB1B4984560080513C /* TAAbstractDotView.h */,
+				D55834BC1B4984560080513C /* TAAbstractDotView.m */,
+				D55834BD1B4984560080513C /* TAAnimatedDotView.h */,
+				D55834BE1B4984560080513C /* TAAnimatedDotView.m */,
+				D55834BF1B4984560080513C /* TADotView.h */,
+				D55834C01B4984560080513C /* TADotView.m */,
+				D55834C11B4984560080513C /* TAPageControl.h */,
+				D55834C21B4984560080513C /* TAPageControl.m */,
+			);
+			path = PageControl;
 			sourceTree = "<group>";
 		};
 		D5BA7C001B462E97005BF850 /* Masonry */ = {
@@ -356,8 +408,7 @@
 		D5D95F781B46CC6F00C8D8FD /* HHADViews(新闻条) */ = {
 			isa = PBXGroup;
 			children = (
-				D5D95F791B46CCFC00C8D8FD /* HHADScrollView.h */,
-				D5D95F7A1B46CCFC00C8D8FD /* HHADScrollView.m */,
+				D55834B71B4984560080513C /* SDCycleScrollView */,
 			);
 			name = "HHADViews(新闻条)";
 			sourceTree = "<group>";
@@ -625,7 +676,6 @@
 				D5E2B8A41B450D07003ACBD6 /* HHBaseNavigationController.m in Sources */,
 				D5BA7C561B462F2A005BF850 /* UIButton+AFNetworking.m in Sources */,
 				D50243B51B45329400C26AE8 /* HHHomePage.m in Sources */,
-				D5E2B8A11B450499003ACBD6 /* HHRightBaseViewController.m in Sources */,
 				D5BA7C541B462F2A005BF850 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				D5BA7C1F1B462E97005BF850 /* MASViewConstraint.m in Sources */,
 				D5BA7C521B462F2A005BF850 /* AFURLSessionManager.m in Sources */,
@@ -633,23 +683,30 @@
 				D5BA7C1A1B462E97005BF850 /* MASCompositeConstraint.m in Sources */,
 				D5D95F721B46CB8400C8D8FD /* HHBaseView.m in Sources */,
 				D5E2B8A71B451013003ACBD6 /* HHBaseViewController.m in Sources */,
+				D55834CF1B4984560080513C /* SDCycleScrollView.m in Sources */,
 				D50243BB1B45352200C26AE8 /* HHSmallGroup.m in Sources */,
 				D5BA7C5A1B462F2A005BF850 /* UIWebView+AFNetworking.m in Sources */,
 				D5BA7C551B462F2A005BF850 /* UIAlertView+AFNetworking.m in Sources */,
 				D50243C41B453D2300C26AE8 /* HHUserAccount.m in Sources */,
 				D5BA7C1D1B462E97005BF850 /* MASLayoutConstraint.m in Sources */,
+				D55834C91B4984560080513C /* NSData+SDDataCache.m in Sources */,
+				D55834B61B4984320080513C /* HHRightBaseViewController.m in Sources */,
 				D50243BE1B4535D900C26AE8 /* HHNearbyHospital.m in Sources */,
 				D5D95F731B46CB8400C8D8FD /* HHCellCollection.m in Sources */,
 				D5E2B8911B44FE01003ACBD6 /* ICSDrawerController.m in Sources */,
+				D55834CA1B4984560080513C /* TAAbstractDotView.m in Sources */,
 				D50243B11B452F1800C26AE8 /* Okeys.m in Sources */,
 				D5E2B8AE1B4517E6003ACBD6 /* OLog.m in Sources */,
+				D55834CC1B4984560080513C /* TADotView.m in Sources */,
 				D5BA7C511B462F2A005BF850 /* AFURLResponseSerialization.m in Sources */,
 				D50243C11B45364B00C26AE8 /* HHSmartHospital.m in Sources */,
 				D5D95F761B46CB8400C8D8FD /* ICSDropShadowView.m in Sources */,
 				D5BA7C211B462E97005BF850 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
-				D5D95F7B1B46CCFC00C8D8FD /* HHADScrollView.m in Sources */,
+				D55834CE1B4984560080513C /* SDCollectionViewCell.m in Sources */,
 				D5BA7C571B462F2A005BF850 /* UIImageView+AFNetworking.m in Sources */,
 				D5BA7C4A1B462F2A005BF850 /* AFHTTPRequestOperation.m in Sources */,
+				D55834D01B4984560080513C /* UIView+SDExtension.m in Sources */,
+				D55834CD1B4984560080513C /* TAPageControl.m in Sources */,
 				D5BA7C581B462F2A005BF850 /* UIProgressView+AFNetworking.m in Sources */,
 				D5BA7C4F1B462F2A005BF850 /* AFURLConnectionOperation.m in Sources */,
 				D5BA7C4B1B462F2A005BF850 /* AFHTTPRequestOperationManager.m in Sources */,
@@ -664,6 +721,7 @@
 				D5BA7C501B462F2A005BF850 /* AFURLRequestSerialization.m in Sources */,
 				D5BA7C4E1B462F2A005BF850 /* AFSecurityPolicy.m in Sources */,
 				D5BA7C531B462F2A005BF850 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				D55834CB1B4984560080513C /* TAAnimatedDotView.m in Sources */,
 				D5BA7C4C1B462F2A005BF850 /* AFHTTPSessionManager.m in Sources */,
 				D50243B81B4534BB00C26AE8 /* HHNearbyPharmacy.m in Sources */,
 				D5E2B89E1B450104003ACBD6 /* HHLeftViewController.m in Sources */,
