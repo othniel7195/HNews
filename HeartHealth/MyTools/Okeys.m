@@ -13,5 +13,6 @@ NSString * const user_account = @"我的账户";
 
 NSString * const UserHeadCell = @"userHeadCell";
 NSString * const LabelCell = @"labelCell";
+NSString * const NormalNewsCell = @"NormalNewsCell";
 
 NSString * const cellStatus=@"cellStatus";

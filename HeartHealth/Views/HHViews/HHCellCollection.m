@@ -41,4 +41,16 @@
     
     return cell;
 }
++(UITableViewCell *)cellForNormalNews:(UITableView *)tableView indexPath:(NSIndexPath *)indexPath imgUrl:(NSString *)imgUrl title:(NSString *)title content:(NSString *)content
+{
+    HHNormalNewCell *cell= [tableView dequeueReusableCellWithIdentifier:NormalNewsCell];
+    if (cell==nil) {
+        
+        cell=[[HHNormalNewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:NormalNewsCell roundEdgeInsets:UIEdgeInsetsMake(10, 10, 0, 10) radius:6 borderWidth:2.0 borderColor:[UIColor lightGrayColor]];
+    }
+    cell.imgURL=imgUrl;
+    cell.title=title;
+    cell.content=content;
+    return cell;
+}
 @end

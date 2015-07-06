@@ -10,6 +10,7 @@
 #import <UIKit/UIKit.h>
 #import "HHUserHeadCell.h"
 #import "HHLabelCell.h"
+#import "HHNormalNewCell.h"
 #import "Okeys.h"
 @interface HHCellCollection : NSObject
 
@@ -25,5 +26,7 @@
 +(UITableViewCell *)cellForLabel:(UITableView *)tableView indexPath:(NSIndexPath *)indexPath
                      normalImage:(UIImage *)normalImage selectImage:(UIImage *)selectImage
                        labelInfo:(NSString *)labelInfo;
+///生成普通新闻cell 并复用
++(UITableViewCell *)cellForNormalNews:(UITableView *)tableView indexPath:(NSIndexPath *)indexPath imgUrl:(NSString *)imgUrl title:(NSString *)title content:(NSString *)content;
 
 @end
