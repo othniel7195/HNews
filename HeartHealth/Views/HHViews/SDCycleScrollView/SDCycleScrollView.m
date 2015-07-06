@@ -97,7 +97,7 @@ NSString * const ID = @"cycleCell";
 - (void)setupMainView
 {
     UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
-    flowLayout.itemSize = self.frame.size;
+    flowLayout.itemSize = CGSizeMake(self.bounds.size.width, self.bounds.size.height-64.0);
     flowLayout.minimumLineSpacing = 0;
     flowLayout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
     _flowLayout = flowLayout;
@@ -122,7 +122,8 @@ NSString * const ID = @"cycleCell";
 {
     [super setFrame:frame];
     
-    _flowLayout.itemSize = self.frame.size;
+    _flowLayout.itemSize = CGSizeMake(self.bounds.size.width, self.bounds.size.height-64.0);
+;
 }
 
 - (void)setPageControlDotSize:(CGSize)pageControlDotSize
@@ -325,7 +326,8 @@ NSString * const ID = @"cycleCell";
 {
     [super layoutSubviews];
     
-    _flowLayout.itemSize = self.frame.size;
+    _flowLayout.itemSize = CGSizeMake(self.bounds.size.width, self.bounds.size.height-64.0);
+;
     
     _mainView.frame = self.bounds;
     if (_mainView.contentOffset.x == 0 &&  _totalItemsCount) {
