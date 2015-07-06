@@ -27,6 +27,8 @@
     cell.userName = userName;
     cell.headImage = headImage;
     
+    [cell initConstraints];
+    
     return cell;
 }
 +(UITableViewCell *)cellForLabel:(UITableView *)tableView indexPath:(NSIndexPath *)indexPath
@@ -38,6 +40,8 @@
     cell.normalLabelImage=normalImage;
     cell.selectLabelImage=selectImage;
     cell.labelInfo=labelInfo;
+    
+    [cell initConstraints];
     
     return cell;
 }
@@ -51,6 +55,9 @@
     cell.imgURL=imgUrl;
     cell.title=title;
     cell.content=content;
+    
+    [cell initConstraints];
+    
     return cell;
 }
 @end

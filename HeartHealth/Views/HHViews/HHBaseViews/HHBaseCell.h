@@ -13,4 +13,5 @@
 
 @property (nonatomic, strong, readonly) NSNumber * cellHeight;
 
+-(void)initConstraints;
 @end

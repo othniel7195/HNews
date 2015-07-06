@@ -28,9 +28,6 @@
         self.backgroundColor=[UIColor blueColor];
         [self.contentView addSubview:self.userHeadImageView];
         [self.contentView addSubview:self.userNameLabel];
-        
-        //布局
-        [self initConstraints];
     }
     
     return self;

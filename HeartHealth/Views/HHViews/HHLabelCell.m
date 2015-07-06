@@ -27,9 +27,6 @@
         [self.contentView addSubview:self.labelImageView];
         [self.contentView addSubview:self.labelL];
         
-        //布局
-        [self initConstraints];
-        
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changeCellStatus:) name:cellStatus object:nil];
     }
     return  self;

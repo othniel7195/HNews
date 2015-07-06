@@ -40,7 +40,6 @@
         
         [self.contentView addSubview:self.roundContentView];
         
-        [self initBaseConstraints];
     }
     
     return self;
@@ -70,17 +69,18 @@
 
 -(void)initBaseConstraints
 {
-   [self.roundContentView mas_makeConstraints:^(MASConstraintMaker *make) {
+    [self.roundContentView mas_makeConstraints:^(MASConstraintMaker *make) {
        
-       make.edges.mas_equalTo(self.contentView).insets=self.roundEdgeInsets;
-       
-   }];
+        make.edges.mas_equalTo(self.contentView).insets(self.roundEdgeInsets);
+      
+    }];
     
+    [self.contentView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.bottom.mas_equalTo(self.roundContentView.mas_bottom).offset(self.roundEdgeInsets.bottom);
+    }];
     
-    CGSize  size  =[self.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize];
-    
-    [OLog showMessage:@"round base  Cell height :%f",size.height];
 }
+
 
 #pragma mark -- 视图
 -(UIView *)roundContentView

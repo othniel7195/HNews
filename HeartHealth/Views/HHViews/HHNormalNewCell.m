@@ -23,20 +23,21 @@
     self=[super initWithStyle:style reuseIdentifier:reuseIdentifier roundEdgeInsets:inserts radius:radius borderWidth:borderWidth borderColor:borderColor];
     
     if (self) {
+        self.selectionStyle=UITableViewCellSelectionStyleNone;
+        [self.contentView addSubview:self.newsImg];
+        [self.contentView addSubview:self.newsTitleLabel];
+        [self.contentView addSubview:self.newsContentLabel];
         
-        [self.roundContentView addSubview:self.newsImg];
-        [self.roundContentView addSubview:self.newsTitleLabel];
-        [self.roundContentView addSubview:self.newsContentLabel];
-        
-        [self initConstraints];
     }
     
     return self;
 }
 
+
 #pragma mark -- 布局
 -(void)initConstraints
 {
+    
     [self.newsImg mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(4);
         make.centerY.mas_equalTo(self.roundContentView.mas_centerY);
@@ -46,24 +47,31 @@
     [self.newsTitleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(self.newsImg.mas_right).offset(5.0);
         make.top.mas_equalTo(8.0);
-        make.right.mas_equalTo(self.roundContentView.mas_right).offset(5.0);
+        make.right.mas_equalTo(self.roundContentView.mas_right).offset(-5);
         make.height.mas_greaterThanOrEqualTo(21.0);
     }];
     
     [self.newsContentLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(self.newsTitleLabel.mas_left);
-        make.top.mas_equalTo(self.newsTitleLabel.mas_bottom);
-        make.right.mas_equalTo(self.newsTitleLabel.mas_right);
+        make.top.mas_equalTo(self.newsTitleLabel.mas_bottom).offset(5.0);
+        make.width.mas_equalTo(self.newsTitleLabel.mas_width);
         make.height.mas_greaterThanOrEqualTo(21.0);
     }];
+
+    [self.roundContentView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.bottom.mas_equalTo(self.newsContentLabel.mas_bottom);
+        
+    }];
     
-    
+    [self initBaseConstraints];
     
     CGSize  size  =[self.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize];
     
     self.cellHeight=[NSNumber numberWithFloat:(size.height+1.0)];
-
-    [OLog showMessage:@"Normal News Cell height :%f",[self.cellHeight floatValue]];
+    
+    
+    
+    [OLog showMessage:@"normal cell height :%@",self.cellHeight];
 }
 
 #pragma mark -- 视图
@@ -99,6 +107,7 @@
         label.font=[UIFont systemFontOfSize:14.0];
         label.textColor=[UIColor darkTextColor];
         label.numberOfLines=0;
+    
         _newsContentLabel=label;
     }
     return _newsContentLabel;

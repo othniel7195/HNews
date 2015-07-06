@@ -13,4 +13,5 @@
 @property (nonatomic, copy) NSString * imgURL;
 @property (nonatomic, copy) NSString * title;// 标题
 @property (nonatomic, copy) NSString * content;//内容
+
 @end

@@ -24,4 +24,10 @@
  */
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier roundEdgeInsets:(UIEdgeInsets)inserts radius:(CGFloat)radius
                   borderWidth:(CGFloat)borderWidth borderColor:(UIColor *)borderColor;
+
+/**
+ *
+ */
+
+-(void)initBaseConstraints;
 @end

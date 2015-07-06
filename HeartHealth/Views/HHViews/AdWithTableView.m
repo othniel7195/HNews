@@ -117,6 +117,8 @@
   
     UITableViewCell *cell=[HHCellCollection cellForNormalNews:tableView indexPath:indexPath imgUrl:@"AAAAA" title:@"标题标题标题标题标题标题标题标题标题标题标题标题" content:@"内容内容内容内容内容内容内容内容内容内容内容内容"];
     
+    [OLog showMessage:@"-------+++++++"];
+    
     NSNumber *cellHeight=[cell valueForKey:@"cellHeight"];
     
     if (self.cellHeights==nil) {
@@ -125,13 +127,14 @@
     NSString *cellHeightKey=[NSString stringWithFormat:@"%ld_%ld",indexPath.section,indexPath.row];
     [self.cellHeights setObject:cellHeight forKey:cellHeightKey];
     
+    
     return cell;
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSString *cellHeightKey=[NSString stringWithFormat:@"%ld_%ld",indexPath.section,indexPath.row];
     
-    return 80;//[[self.cellHeights objectForKey:cellHeightKey] floatValue];
+    return  [[self.cellHeights objectForKey:cellHeightKey] floatValue];
 }
 
 #pragma mark -- tabel datasource

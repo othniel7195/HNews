@@ -31,4 +31,10 @@
    
 }
 
+#pragma mark ---布局
+-(void)initConstraints
+{
+    
+}
+
 @end
