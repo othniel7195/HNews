@@ -15,6 +15,11 @@
 		D50243C11B45364B00C26AE8 /* HHSmartHospital.m in Sources */ = {isa = PBXBuildFile; fileRef = D50243C01B45364B00C26AE8 /* HHSmartHospital.m */; };
 		D50243C41B453D2300C26AE8 /* HHUserAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = D50243C31B453D2300C26AE8 /* HHUserAccount.m */; };
 		D50243C71B45538A00C26AE8 /* HHDetailWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = D50243C61B45538A00C26AE8 /* HHDetailWebView.m */; };
+		D53F47201B4BB01500520179 /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D53F471F1B4BB01500520179 /* libxml2.2.dylib */; };
+		D53F47221B4BB95C00520179 /* APIURL.rtf in Resources */ = {isa = PBXBuildFile; fileRef = D53F47211B4BB95C00520179 /* APIURL.rtf */; };
+		D53F47CD1B4BCACB00520179 /* TFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = D53F47C81B4BCACB00520179 /* TFHpple.m */; };
+		D53F47CE1B4BCACB00520179 /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = D53F47CA1B4BCACB00520179 /* TFHppleElement.m */; };
+		D53F47CF1B4BCACB00520179 /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = D53F47CC1B4BCACB00520179 /* XPathQuery.m */; };
 		D55834B61B4984320080513C /* HHRightBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D55834B51B4984320080513C /* HHRightBaseViewController.m */; };
 		D55834C91B4984560080513C /* NSData+SDDataCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D55834B91B4984560080513C /* NSData+SDDataCache.m */; };
 		D55834CA1B4984560080513C /* TAAbstractDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = D55834BC1B4984560080513C /* TAAbstractDotView.m */; };
@@ -67,6 +72,9 @@
 		D5E2B8A71B451013003ACBD6 /* HHBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E2B8A61B451013003ACBD6 /* HHBaseViewController.m */; };
 		D5E2B8A91B451433003ACBD6 /* hamburger@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D5E2B8A81B451433003ACBD6 /* hamburger@2x.png */; };
 		D5E2B8AE1B4517E6003ACBD6 /* OLog.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E2B8AD1B4517E6003ACBD6 /* OLog.m */; };
+		D5E6EC9D1B4B76140045AA7F /* AdWithTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E6EC9C1B4B76140045AA7F /* AdWithTableView.m */; };
+		D5E6ECA01B4B761D0045AA7F /* HHNormalNewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E6EC9F1B4B761D0045AA7F /* HHNormalNewCell.m */; };
+		D5E6ECA31B4B762A0045AA7F /* HHRoundBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E6ECA21B4B762A0045AA7F /* HHRoundBaseCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +104,14 @@
 		D50243C31B453D2300C26AE8 /* HHUserAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHUserAccount.m; sourceTree = "<group>"; };
 		D50243C51B45538A00C26AE8 /* HHDetailWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHDetailWebView.h; sourceTree = "<group>"; };
 		D50243C61B45538A00C26AE8 /* HHDetailWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHDetailWebView.m; sourceTree = "<group>"; };
+		D53F471F1B4BB01500520179 /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
+		D53F47211B4BB95C00520179 /* APIURL.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = APIURL.rtf; sourceTree = "<group>"; };
+		D53F47C71B4BCACB00520179 /* TFHpple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHpple.h; sourceTree = "<group>"; };
+		D53F47C81B4BCACB00520179 /* TFHpple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHpple.m; sourceTree = "<group>"; };
+		D53F47C91B4BCACB00520179 /* TFHppleElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHppleElement.h; sourceTree = "<group>"; };
+		D53F47CA1B4BCACB00520179 /* TFHppleElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHppleElement.m; sourceTree = "<group>"; };
+		D53F47CB1B4BCACB00520179 /* XPathQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPathQuery.h; sourceTree = "<group>"; };
+		D53F47CC1B4BCACB00520179 /* XPathQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPathQuery.m; sourceTree = "<group>"; };
 		D55834B41B4984320080513C /* HHRightBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HHRightBaseViewController.h; path = HeartHealth/ViewControllers/HHViewControllers/HHRightBaseViewController.h; sourceTree = SOURCE_ROOT; };
 		D55834B51B4984320080513C /* HHRightBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HHRightBaseViewController.m; path = HeartHealth/ViewControllers/HHViewControllers/HHRightBaseViewController.m; sourceTree = SOURCE_ROOT; };
 		D55834B81B4984560080513C /* NSData+SDDataCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+SDDataCache.h"; sourceTree = "<group>"; };
@@ -207,6 +223,12 @@
 		D5E2B8A81B451433003ACBD6 /* hamburger@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hamburger@2x.png"; sourceTree = "<group>"; };
 		D5E2B8AC1B4517E6003ACBD6 /* OLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLog.h; sourceTree = "<group>"; };
 		D5E2B8AD1B4517E6003ACBD6 /* OLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLog.m; sourceTree = "<group>"; };
+		D5E6EC9B1B4B76140045AA7F /* AdWithTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdWithTableView.h; sourceTree = "<group>"; };
+		D5E6EC9C1B4B76140045AA7F /* AdWithTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdWithTableView.m; sourceTree = "<group>"; };
+		D5E6EC9E1B4B761D0045AA7F /* HHNormalNewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHNormalNewCell.h; sourceTree = "<group>"; };
+		D5E6EC9F1B4B761D0045AA7F /* HHNormalNewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHNormalNewCell.m; sourceTree = "<group>"; };
+		D5E6ECA11B4B762A0045AA7F /* HHRoundBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHRoundBaseCell.h; sourceTree = "<group>"; };
+		D5E6ECA21B4B762A0045AA7F /* HHRoundBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHRoundBaseCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,6 +236,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D53F47201B4BB01500520179 /* libxml2.2.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,6 +261,27 @@
 				D5E2B8A61B451013003ACBD6 /* HHBaseViewController.m */,
 			);
 			path = HHBase;
+			sourceTree = "<group>";
+		};
+		D53F47121B4BA68B00520179 /* Hpple */ = {
+			isa = PBXGroup;
+			children = (
+				D53F47C71B4BCACB00520179 /* TFHpple.h */,
+				D53F47C81B4BCACB00520179 /* TFHpple.m */,
+				D53F47C91B4BCACB00520179 /* TFHppleElement.h */,
+				D53F47CA1B4BCACB00520179 /* TFHppleElement.m */,
+				D53F47CB1B4BCACB00520179 /* XPathQuery.h */,
+				D53F47CC1B4BCACB00520179 /* XPathQuery.m */,
+			);
+			path = Hpple;
+			sourceTree = "<group>";
+		};
+		D53F471E1B4BAFFB00520179 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				D53F471F1B4BB01500520179 /* libxml2.2.dylib */,
+			);
+			name = Framework;
 			sourceTree = "<group>";
 		};
 		D55834B71B4984560080513C /* SDCycleScrollView */ = {
@@ -370,6 +414,8 @@
 				D5D95F621B46CB8400C8D8FD /* HHBaseViews */,
 				D5D95F671B46CB8400C8D8FD /* HHCellCollection.h */,
 				D5D95F681B46CB8400C8D8FD /* HHCellCollection.m */,
+				D5E6EC9B1B4B76140045AA7F /* AdWithTableView.h */,
+				D5E6EC9C1B4B76140045AA7F /* AdWithTableView.m */,
 			);
 			path = HHViews;
 			sourceTree = "<group>";
@@ -377,6 +423,8 @@
 		D5D95F621B46CB8400C8D8FD /* HHBaseViews */ = {
 			isa = PBXGroup;
 			children = (
+				D5E6ECA11B4B762A0045AA7F /* HHRoundBaseCell.h */,
+				D5E6ECA21B4B762A0045AA7F /* HHRoundBaseCell.m */,
 				D5D95F631B46CB8400C8D8FD /* HHBaseCell.h */,
 				D5D95F641B46CB8400C8D8FD /* HHBaseCell.m */,
 				D5D95F651B46CB8400C8D8FD /* HHBaseView.h */,
@@ -401,6 +449,8 @@
 				D5D95F6A1B46CB8400C8D8FD /* HHLabelCell.m */,
 				D5D95F6B1B46CB8400C8D8FD /* HHUserHeadCell.h */,
 				D5D95F6C1B46CB8400C8D8FD /* HHUserHeadCell.m */,
+				D5E6EC9E1B4B761D0045AA7F /* HHNormalNewCell.h */,
+				D5E6EC9F1B4B761D0045AA7F /* HHNormalNewCell.m */,
 			);
 			name = HHCells;
 			sourceTree = "<group>";
@@ -418,6 +468,7 @@
 			children = (
 				D5E2B8061B44DB14003ACBD6 /* HeartHealth */,
 				D5E2B8201B44DB15003ACBD6 /* HeartHealthTests */,
+				D53F471E1B4BAFFB00520179 /* Framework */,
 				D5E2B8051B44DB14003ACBD6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -455,6 +506,7 @@
 			children = (
 				D5E2B8081B44DB14003ACBD6 /* Info.plist */,
 				D5E2B8091B44DB14003ACBD6 /* main.m */,
+				D53F47211B4BB95C00520179 /* APIURL.rtf */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -508,6 +560,7 @@
 		D5E2B8311B44DD09003ACBD6 /* Tools(第三方框架) */ = {
 			isa = PBXGroup;
 			children = (
+				D53F47121B4BA68B00520179 /* Hpple */,
 				D5BA7C241B462F2A005BF850 /* AFNetworking */,
 				D5BA7C381B462F2A005BF850 /* UIKit+AFNetworking */,
 				D5BA7C001B462E97005BF850 /* Masonry */,
@@ -650,6 +703,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5E2B8A91B451433003ACBD6 /* hamburger@2x.png in Resources */,
+				D53F47221B4BB95C00520179 /* APIURL.rtf in Resources */,
 				D5E2B8151B44DB14003ACBD6 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -690,12 +744,15 @@
 				D50243C41B453D2300C26AE8 /* HHUserAccount.m in Sources */,
 				D5BA7C1D1B462E97005BF850 /* MASLayoutConstraint.m in Sources */,
 				D55834C91B4984560080513C /* NSData+SDDataCache.m in Sources */,
+				D53F47CF1B4BCACB00520179 /* XPathQuery.m in Sources */,
 				D55834B61B4984320080513C /* HHRightBaseViewController.m in Sources */,
 				D50243BE1B4535D900C26AE8 /* HHNearbyHospital.m in Sources */,
+				D53F47CD1B4BCACB00520179 /* TFHpple.m in Sources */,
 				D5D95F731B46CB8400C8D8FD /* HHCellCollection.m in Sources */,
 				D5E2B8911B44FE01003ACBD6 /* ICSDrawerController.m in Sources */,
 				D55834CA1B4984560080513C /* TAAbstractDotView.m in Sources */,
 				D50243B11B452F1800C26AE8 /* Okeys.m in Sources */,
+				D5E6ECA01B4B761D0045AA7F /* HHNormalNewCell.m in Sources */,
 				D5E2B8AE1B4517E6003ACBD6 /* OLog.m in Sources */,
 				D55834CC1B4984560080513C /* TADotView.m in Sources */,
 				D5BA7C511B462F2A005BF850 /* AFURLResponseSerialization.m in Sources */,
@@ -708,9 +765,11 @@
 				D55834D01B4984560080513C /* UIView+SDExtension.m in Sources */,
 				D55834CD1B4984560080513C /* TAPageControl.m in Sources */,
 				D5BA7C581B462F2A005BF850 /* UIProgressView+AFNetworking.m in Sources */,
+				D5E6EC9D1B4B76140045AA7F /* AdWithTableView.m in Sources */,
 				D5BA7C4F1B462F2A005BF850 /* AFURLConnectionOperation.m in Sources */,
 				D5BA7C4B1B462F2A005BF850 /* AFHTTPRequestOperationManager.m in Sources */,
 				D5D95F711B46CB8400C8D8FD /* HHBaseCell.m in Sources */,
+				D53F47CE1B4BCACB00520179 /* TFHppleElement.m in Sources */,
 				D5BA7C591B462F2A005BF850 /* UIRefreshControl+AFNetworking.m in Sources */,
 				D5D95F751B46CB8400C8D8FD /* HHUserHeadCell.m in Sources */,
 				D50243C71B45538A00C26AE8 /* HHDetailWebView.m in Sources */,
@@ -725,6 +784,7 @@
 				D5BA7C4C1B462F2A005BF850 /* AFHTTPSessionManager.m in Sources */,
 				D50243B81B4534BB00C26AE8 /* HHNearbyPharmacy.m in Sources */,
 				D5E2B89E1B450104003ACBD6 /* HHLeftViewController.m in Sources */,
+				D5E6ECA31B4B762A0045AA7F /* HHRoundBaseCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -832,6 +892,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"${SDKROOT}/usr/include/libxml2",
+				);
 				INFOPLIST_FILE = HeartHealth/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -844,6 +909,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"${SDKROOT}/usr/include/libxml2",
+				);
 				INFOPLIST_FILE = HeartHealth/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

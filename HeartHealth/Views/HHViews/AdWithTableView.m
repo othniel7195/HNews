@@ -115,10 +115,8 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
   
-    UITableViewCell *cell=[HHCellCollection cellForNormalNews:tableView indexPath:indexPath imgUrl:@"AAAAA" title:@"标题标题标题标题标题标题标题标题标题标题标题标题" content:@"内容内容内容内容内容内容内容内容内容内容内容内容"];
-    
-    [OLog showMessage:@"-------+++++++"];
-    
+    UITableViewCell *cell=[HHCellCollection cellForNormalNews:tableView indexPath:indexPath imgUrl:@"AAAAA" title:@"标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题" content:@"内容内容内容内容内容内容内容内容内容内容内容内容"];
+ 
     NSNumber *cellHeight=[cell valueForKey:@"cellHeight"];
     
     if (self.cellHeights==nil) {
@@ -126,15 +124,16 @@
     }
     NSString *cellHeightKey=[NSString stringWithFormat:@"%ld_%ld",indexPath.section,indexPath.row];
     [self.cellHeights setObject:cellHeight forKey:cellHeightKey];
-    
-    
     return cell;
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSString *cellHeightKey=[NSString stringWithFormat:@"%ld_%ld",indexPath.section,indexPath.row];
-    
-    return  [[self.cellHeights objectForKey:cellHeightKey] floatValue];
+    return [[self.cellHeights objectForKey:cellHeightKey] floatValue];
+}
+-(CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 60.0;
 }
 
 #pragma mark -- tabel datasource

@@ -11,7 +11,6 @@
 @interface HHRoundBaseCell ()
 
 @property(nonatomic, strong,readwrite) UIView *roundContentView;
-@property(nonatomic, assign) UIEdgeInsets roundEdgeInsets;
 @property(nonatomic, assign) CGFloat radius;
 @property(nonatomic, assign) CGFloat borderWidth;
 @property(nonatomic, strong) UIColor *borderColor;
@@ -37,7 +36,7 @@
         }else{
             [OLog showMessage:@"走了自己得初始化方法 %@",NSStringFromUIEdgeInsets(_roundEdgeInsets)];
         }
-        
+        self.contentView.backgroundColor=[UIColor yellowColor];
         [self.contentView addSubview:self.roundContentView];
         
     }
@@ -66,22 +65,16 @@
 }
 
 #pragma mark -- 布局
-
--(void)initBaseConstraints
+-(void)layoutSubviews
 {
-    [self.roundContentView mas_makeConstraints:^(MASConstraintMaker *make) {
-       
-        make.edges.mas_equalTo(self.contentView).insets(self.roundEdgeInsets);
-      
-    }];
+    CGFloat x=self.roundEdgeInsets.left;
+    CGFloat y=self.roundEdgeInsets.top;
+    CGFloat w=self.contentView.bounds.size.width-self.roundEdgeInsets.left-self.roundEdgeInsets.right;
+    CGFloat h=self.contentView.bounds.size.height-self.roundEdgeInsets.top-self.roundEdgeInsets.bottom;
     
-    [self.contentView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.bottom.mas_equalTo(self.roundContentView.mas_bottom).offset(self.roundEdgeInsets.bottom);
-    }];
+    self.roundContentView.frame=CGRectMake(x, y, w, h);
     
 }
-
-
 #pragma mark -- 视图
 -(UIView *)roundContentView
 {
@@ -91,6 +84,7 @@
         view.layer.cornerRadius=self.radius;
         view.layer.borderWidth=self.borderWidth;
         view.layer.borderColor=self.borderColor.CGColor;
+        view.backgroundColor=[UIColor blueColor];
 
         _roundContentView=view;
     }

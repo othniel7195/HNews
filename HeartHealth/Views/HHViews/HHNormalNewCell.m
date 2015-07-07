@@ -24,9 +24,9 @@
     
     if (self) {
         self.selectionStyle=UITableViewCellSelectionStyleNone;
-        [self.contentView addSubview:self.newsImg];
-        [self.contentView addSubview:self.newsTitleLabel];
-        [self.contentView addSubview:self.newsContentLabel];
+        [self.roundContentView addSubview:self.newsImg];
+        [self.roundContentView addSubview:self.newsTitleLabel];
+        [self.roundContentView addSubview:self.newsContentLabel];
         
     }
     
@@ -47,32 +47,24 @@
     [self.newsTitleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(self.newsImg.mas_right).offset(5.0);
         make.top.mas_equalTo(8.0);
-        make.right.mas_equalTo(self.roundContentView.mas_right).offset(-5);
+        make.right.mas_greaterThanOrEqualTo(self.roundContentView.mas_right).offset(-5.0);
         make.height.mas_greaterThanOrEqualTo(21.0);
     }];
     
     [self.newsContentLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(self.newsTitleLabel.mas_left);
         make.top.mas_equalTo(self.newsTitleLabel.mas_bottom).offset(5.0);
-        make.width.mas_equalTo(self.newsTitleLabel.mas_width);
+        make.right.mas_equalTo(self.newsTitleLabel.mas_right);
         make.height.mas_greaterThanOrEqualTo(21.0);
     }];
+    
+    CGSize titleSize=[self.newsTitleLabel systemLayoutSizeFittingSize:UILayoutFittingCompressedSize];
+    CGSize contentSize=[self.newsContentLabel systemLayoutSizeFittingSize:UILayoutFittingCompressedSize];
+    
+    self.cellHeight=[NSNumber numberWithFloat:(titleSize.height+contentSize.height+8.0+5.0+8.0+10.0)];
 
-    [self.roundContentView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.bottom.mas_equalTo(self.newsContentLabel.mas_bottom);
-        
-    }];
-    
-    [self initBaseConstraints];
-    
-    CGSize  size  =[self.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize];
-    
-    self.cellHeight=[NSNumber numberWithFloat:(size.height+1.0)];
-    
-    
-    
-    [OLog showMessage:@"normal cell height :%@",self.cellHeight];
 }
+
 
 #pragma mark -- 视图
 
@@ -80,6 +72,8 @@
 {
     if (_newsImg==nil) {
         UIImageView *imageView=[[UIImageView alloc] initWithFrame:CGRectZero];
+        imageView.image=[UIImage imageNamed:@"hamburger"];
+        imageView.backgroundColor=[UIColor redColor];
         _newsImg=imageView;
     }
     
@@ -93,6 +87,8 @@
         label.font=[UIFont systemFontOfSize:14.0];
         label.textColor=[UIColor blackColor];
         label.numberOfLines=0;
+        label.backgroundColor=[UIColor orangeColor];
+        label.preferredMaxLayoutWidth=196.0;
         
         _newsTitleLabel=label;
     }
@@ -107,6 +103,8 @@
         label.font=[UIFont systemFontOfSize:14.0];
         label.textColor=[UIColor darkTextColor];
         label.numberOfLines=0;
+        label.backgroundColor=[UIColor clearColor];
+        label.preferredMaxLayoutWidth=196.0;
     
         _newsContentLabel=label;
     }

@@ -17,6 +17,11 @@
 @property(nonatomic, strong,readonly)UIView *roundContentView;
 
 /**
+ *
+ */
+@property(nonatomic, assign) UIEdgeInsets roundEdgeInsets;
+
+/**
  *  roundEdgeInsets 圆角四周的间隔
  *  radius:圆角半径
  *  borderWith 边框大小
@@ -25,9 +30,5 @@
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier roundEdgeInsets:(UIEdgeInsets)inserts radius:(CGFloat)radius
                   borderWidth:(CGFloat)borderWidth borderColor:(UIColor *)borderColor;
 
-/**
- *
- */
 
--(void)initBaseConstraints;
 @end
